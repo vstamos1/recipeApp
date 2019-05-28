@@ -21,3 +21,12 @@ body{
 .letter-spacing{
   letter-spacing: 0.5rem
 }
+
+.header-hero, .default-hero {
+  background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./images/homeBcg.jpeg') center/cover;
+  min-height: calc(100vh - 86px);
+}
+
+.default-hero{
+  background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./images/defaultBcg.jpeg') center/cover;
+}
