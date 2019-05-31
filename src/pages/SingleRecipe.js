@@ -41,7 +41,7 @@ export default class SingleRecipe extends Component {
                 const imageUrl = image_url;
             }else{
                 
-                const imageUrl = imageUrl.replace("http", "https") ;
+                const imageUrl = image_url.replace("http", "https") ;
             }
             
 
