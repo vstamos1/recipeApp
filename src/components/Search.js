@@ -14,7 +14,7 @@ export default class Search extends Component {
                     <form action="" className="mt-4">
                         <label htmlFor="search" className="text-capitalize">type recipes seperated by commas</label>
                         <div className="input-group">
-                            <input type="text" name="search" className="form-contol" placeholder="chicken, onions, carrrots" value={search} onChange={handleChange}/>
+                            <input type="text" name="search" className="form-control" placeholder="chicken, onions, carrrots" value={search} onChange={handleChange}/>
                         <div className="group-input-append"></div>
                         <button type="submit" className="input-group-text bg-primary text-white" onClick={handleSubmit}>
                         Search <i className="fas fa-search"></i>
