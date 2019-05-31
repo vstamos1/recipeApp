@@ -37,6 +37,14 @@ export default class SingleRecipe extends Component {
             source_url, publisher_url, 
             title, ingredients} = this.state.recipe;
 
+            if (image_url.includes('https') === true ) {
+                const imageUrl = image_url;
+            }else{
+                
+                const imageUrl = imageUrl.replace("http", "https") ;
+            }
+            
+
             if(this.state.loading){
                 return (
             
@@ -58,7 +66,7 @@ export default class SingleRecipe extends Component {
                         <Link to="/recipes" className="btn btn-warning mb-5 text-capitalize">
                             back to recipes
                         </Link>
-                        <img src={image_url} className="d-block w-100" alt={title} style={{maxHeight: "30rem"}}/>
+                        <img src={imageUrl} className="d-block w-100" alt={title} style={{maxHeight: "30rem"}}/>
                      </div>
                      <div className="col-10 mx-auto col-md-6 my-3">
                          <h6 className="text-uppercase">{title}</h6>
