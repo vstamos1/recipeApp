@@ -36,13 +36,18 @@ export default class SingleRecipe extends Component {
         const {image_url, publisher, 
             source_url, publisher_url, 
             title, ingredients} = this.state.recipe;
-
-            if (image_url.includes('https') === true ) {
-                const imageUrl = image_url;
-            }else{
+             let imageUrl = image_url;
+            // let stringUrl = '';
+            // if (image_url.includes('https') === true ) {
+            //      imageUrl = image_url;
+            //      console.log(imageUrl);
+            // }else{
                 
-                const imageUrl = image_url.replace("http", "https") ;
-            }
+            //     stringUrl = image_url;
+            //     imageUrl = stringUrl.replace("http", "https") ;
+            //     console.log(imageUrl);
+            // }
+
             
 
             if(this.state.loading){
